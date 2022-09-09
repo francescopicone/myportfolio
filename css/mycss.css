@@ -3,13 +3,12 @@
 html, body {
     background-color: #1c1c1c;
     font-family: Nunito;
-    transition-duration: 1s;
     height: 100%;
 }
 
 .colsx {
     background-color: white;
-    max-width: 35%;
+    max-width: 25%;
 }
 
 .coldx {
@@ -43,7 +42,7 @@ html, body {
 
 .navbar-brand {
     font-weight: 900;
-    font-size: 180%;
+    font-size: 150%;
 }
 
 .description {
@@ -55,4 +54,33 @@ html, body {
 .particle {
     position: absolute;
     border-radius: 50%;
+}
+
+.navbar {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome {
+        font-size: 28pt;
+    }
+
+    .coldx {
+        padding-left: 15px;
+    }
+
+    .colsx {
+        max-width: 15%;
+    }
+
+    .nav-link {
+        font-weight: 400 !important;
+    }
+
+    .navbar {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
 }

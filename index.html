@@ -7,31 +7,11 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/mycss.css">
         <link rel="stylesheet" href="css/particles.css">
+        <link rel="stylesheet" href="css/iconbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="theme-color" content="#F0E7DB" />
 
-
-        <script>
-
-            let isDark = true;
-
-            function dark_mode() {
-
-                if (isDark == true) {
-                    isDark = false;
-                    document.getElementById('name').style.color = 'red';
-                    document.body.style.backgroundColor = '#F0E7DB';
-                    document.body.style.color = 'black';
-                }
-                else if (isDark == false){
-                    isDark = true;
-                    document.getElementById('name').style.color = 'white';
-                    document.body.style.backgroundColor = '#1c1c1c';
-                    document.body.style.color = 'white';
-                    document.getElementById('nvbar').style.color = 'black';
-                }
-            }
-
-        </script>
 
     </head>
 
@@ -80,6 +60,8 @@
         PORTFOLIO UNDER CONSTRUCTION
     </div>
 
+
+
         <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: rgba(255,255,255,0.2); padding-left: 15px; padding-right: 15px;"> <!-- Navbar -->
                 <a class="navbar-brand" href="#" style="color: black;">
                     <!-- <img src="resources/animoji.png" alt="" height="32" class="d-inline-block"> -->
@@ -105,7 +87,11 @@
     <div class="container-fluid h-100">
         <div class="row h-100">
             <div class="col colsx">
-
+                <div class="icon-bar">
+                    <a href="https://www.facebook.com/franci.picone" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google"></i></a>
+                    <a href="https://www.linkedin.com/in/francesco-picone-967613193/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
             </div>
             <div class="col coldx">
                 <h1 class="welcome">Hello, i'm <br><b>Francesco Picone<span class="bluedot">.</span></b></h1>

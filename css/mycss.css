@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
 html, body {
     background-color: #1c1c1c;
@@ -26,14 +28,14 @@ html, body {
 
 .bluedot {
     color: #0b5ed7;
-    font-size: 72pt;
+    font-size: 64pt;
     line-height: 10px;
 
 }
 
 .bluedot-small {
     color: #0b5ed7;
-    font-size: 48pt;
+    font-size: 36pt;
     line-height: 10px;
 
 }
@@ -67,6 +69,10 @@ html, body {
     border: none;
     outline: none;
     color: black;
+}
+
+.subtext {
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 600px) {

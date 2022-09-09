@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+html, body {
+    background-color: #1c1c1c;
+    font-family: Nunito;
+    transition-duration: 1s;
+    height: 100%;
+}
+
+.colsx {
+    background-color: white;
+    max-width: 35%;
+}
+
+.coldx {
+    background-color: #F0E7DB;
+    color: black;
+    padding-top: 250px;
+    padding-left: 50px;
+}
+
+.welcome {
+    font-size: 48pt;
+}
+
+.bluedot {
+    color: #0b5ed7;
+    font-size: 72pt;
+    line-height: 10px;
+
+}
+
+.bluedot-small {
+    color: #0b5ed7;
+    font-size: 48pt;
+    line-height: 10px;
+
+}
+
+.gray {
+    color: #6e6e6e;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    font-size: 180%;
+}
+
+.description {
+    max-width: 600px;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+}

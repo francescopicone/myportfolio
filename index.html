@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/mycss.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+        <script>
+
+            let isDark = true;
+
+            function dark_mode() {
+
+                if (isDark == true) {
+                    isDark = false;
+                    document.getElementById('name').style.color = 'red';
+                    document.body.style.backgroundColor = '#F0E7DB';
+                    document.body.style.color = 'black';
+                }
+                else if (isDark == false){
+                    isDark = true;
+                    document.getElementById('name').style.color = 'white';
+                    document.body.style.backgroundColor = '#1c1c1c';
+                    document.body.style.color = 'white';
+                    document.getElementById('nvbar').style.color = 'black';
+                }
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+    <div class="fixed-bottom" align="right">
+        <button onclick="dark_mode()" style="background-color: yellow; width: 50px; height: 50px; margin: 30px; border-radius: 15px; outline: none; border: none;">DarkMode</button>
+    </div>
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: rgba(255,255,255,0.2); padding-left: 15px; padding-right: 15px;  backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px);"> <!-- Navbar -->
+                <a class="navbar-brand" href="#" style="color: white;">
+                    <img src="resources/animoji.png" alt="" height="32" class="d-inline-block">
+                    Francesco Picone
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+    <!-- Contenuto pagina -->
+
+    <div class="container-fluids" align="center">
+        <img src="resources/animoji.png" height="256px" style="margin-top: 80px;">
+    </div>
+
+
+    <div class="container" style="max-width: 600px;">
+    <div class="col">
+    </div>
+    <div class="col">
+        <div class="row">
+            <div class="col-auto" align="center" style="background-color: rgba(255,255,255,0.3); margin-bottom: 100px; padding: 20px; border-radius: 15px;">
+                Hi, i'am Francesco Picone, a Computer science student based in Naples !
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col" style="padding-top: 20px;">
+                <h3 class="text-white" id="name">Francesco Picone</h3>
+                <h6 style="color: rgba(255,255,255,0.7)">(Computer Science Student / Web Designer)</h6>
+            </div>
+            <div class="col">
+                <img src="resources/avatar.png" height="96px" style="border-radius: 100%; border: 3px solid; border-color: white; float: right;">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>My name is Francesco, I am 27 years old and I come from Caserta, Italy.
+
+                    I am passionate about computers, and everything related to technology.
+
+                    I am currently a Computer Science Student at the University of Naples "Parthenope", I also participated in
+                    apple's iOS Foundation Program, an academic program in collaboration with Apple to offer courses aimed at creating potentially valid iOS apps.</p>
+            </div>
+        </div>
+
+
+        <!-- Biografia -->
+
+        <div class="row">
+            <div class="w-100">&nbsp;</div>
+            <h3 style="text-decoration-line: underline; ">Bio</h3>
+            <div class="col-2">
+                <div class="w-25">&nbsp;</div>
+                <h6><strong>1995</strong></h6>
+                <h6><strong>2014</strong></h6>
+            </div>
+            <div class="col">
+                <div class="w-25">&nbsp;</div>
+                <h6>Born in Naples.</h6>
+                <h6>Scientific high school diploma at "Giancarlo Siani" scientific high school</h6>
+            </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="w-25">&nbsp;</div>
+                <h6><strong>2017 to present</strong></h6>
+            </div>
+            <div class="col">
+                <div class="w-25">&nbsp;</div>
+                <h6>Computer science student at "Universit&aacute; degli studi di Napoli Parthenope" and Web Designer</h6>
+            </div>
+        </div>
+        </div>
+
+        <!-- On the web -->
+
+        <div class="row">
+            <div class="w-100">&nbsp;</div>
+            <h3 style="text-decoration-line: underline; ">On the web</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Discord</a>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </body>
+</html>

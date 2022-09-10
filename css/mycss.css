@@ -60,6 +60,7 @@ html, body {
     margin-top: 50px;
     font-weight: 400;
     transition-duration: 1s;
+    font-size: 13pt;
 }
 
 .particle {
@@ -93,7 +94,7 @@ html, body {
 }
 
 #sitemode {
-    background-color: #b06fcc;
+    background-color: #002173;
     fill: white;
     width: 42px;
     height: 42px;
@@ -101,7 +102,28 @@ html, body {
     border-radius: 15px;
     outline: none;
     border: none;
-    box-shadow: 0px 5px 0px 0px #9A5BB6FF;
+    box-shadow: 0px 5px 0px 0px #001a56;
+    display: inline-block;
+}
+
+
+.work-card  {
+    background-color: white !important;
+    padding: 20px;
+    width: 300px;
+    height: 180px;
+    border: none;
+    margin-top: 50px;
+    border-radius: 15px;
+    background-size: contain;
+    background-position-x: 50% !important;
+    background-position-y: 47% !important;
+    transition-duration: 1s;
+    outline: none;
+}
+
+.work-card:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 600px) {
@@ -129,6 +151,10 @@ html, body {
 
     .navbar-collapse ul {
         height: 100vh;
+    }
+
+    .work-card {
+        width: 100%;
     }
 
 }

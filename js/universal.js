@@ -1,8 +1,12 @@
 var isDark = false;
 
+
+
 $( "#sitemode" ).click(function() {
 
     if(isDark == false){
+
+        // Modalità dark
 
         $("#sitemode").attr('style', 'box-shadow: 0px 5px 0px 0px #ffb14b;');
         $("#sitemode").css("background-color", "#ffed3f");
@@ -15,6 +19,8 @@ $( "#sitemode" ).click(function() {
         $(".nav-link").css("color", "white");
         $(".description").removeClass('gray');
         $(".description").addClass('text-white');
+        $(".navbar").removeClass("navbar-light");
+        $(".navbar").addClass('navbar-dark');
 
 
         isDark = true;
@@ -24,8 +30,10 @@ $( "#sitemode" ).click(function() {
 
     else if(isDark == true){
 
-        $("#sitemode").attr('style', 'box-shadow: 0px 5px 0px 0px #9A5BB6FF;');
-        $("#sitemode").css("background-color", "#c681e6");
+        // Modalità light
+
+        $("#sitemode").attr('style', 'box-shadow: 0px 5px 0px 0px #001a56;');
+        $("#sitemode").css("background-color", "#002173");
         $("#sitemode").css("fill", "white");
         $(".colsx").css("background-color", "white");
         $(".coldx").css("background-color", "#F0E7DB");
@@ -35,6 +43,10 @@ $( "#sitemode" ).click(function() {
         $(".nav-link").css("color", "black");
         $(".description").removeClass('text-white');
         $(".description").addClass('gray');
+        $(".navbar").removeClass('navbar-dark');
+        $(".navbar").addClass("navbar-light");
+        $(".particle").addClass("particlel")
+       // $(".particle").removeClass("particle")
 
 
 

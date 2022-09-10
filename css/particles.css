@@ -1,5 +1,5 @@
 .particle {
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
 }
 

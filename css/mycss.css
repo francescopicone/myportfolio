@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html, body {
     background-color: #1c1c1c;
-    font-family: Nunito;
+    font-family: Poppins;
     height: 100%;
+    transition-duration: 1s !important;
+
 }
 
 .colsx {
     background-color: white;
     max-width: 25%;
     min-height: 100% !important;
+    transition-duration: 1s;
 }
 
 .coldx {
@@ -20,22 +24,24 @@ html, body {
     padding-top: 250px;
     padding-left: 50px;
     min-height: 100% !important;
+    transition-duration: 1s;
 }
 
 .welcome {
-    font-size: 48pt;
+    font-size: 72pt;
+    transition-duration: 1s;
 }
 
 .bluedot {
     color: #0b5ed7;
-    font-size: 64pt;
+    font-size: 48pt;
     line-height: 10px;
 
 }
 
 .bluedot-small {
     color: #0b5ed7;
-    font-size: 36pt;
+    font-size: 32pt;
     line-height: 10px;
 
 }
@@ -45,7 +51,7 @@ html, body {
 }
 
 .navbar-brand {
-    font-weight: 900;
+    font-weight: 500;
     font-size: 150%;
 }
 
@@ -53,6 +59,7 @@ html, body {
     max-width: 600px;
     margin-top: 50px;
     font-weight: 400;
+    transition-duration: 1s;
 }
 
 .particle {
@@ -63,21 +70,43 @@ html, body {
 .navbar {
     padding-left: 100px !important;
     padding-right: 100px !important;
+    transition-duration: 1s;
 }
 
 .navbar-toggler {
     border: none;
     outline: none;
-    color: black;
+    color: #212121;
 }
 
 .subtext {
     font-weight: 600;
 }
 
+.blurred {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+#section-welcome, #section-whoiam, #section-works {
+    height: 100% !important;
+}
+
+#sitemode {
+    background-color: #b06fcc;
+    fill: white;
+    width: 42px;
+    height: 42px;
+    margin: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 5px 0px 0px #9A5BB6FF;
+}
+
 @media only screen and (max-width: 600px) {
     .welcome {
-        font-size: 28pt;
+        font-size: 36pt;
     }
 
     .coldx {
@@ -90,12 +119,16 @@ html, body {
     }
 
     .nav-link {
-        font-weight: 400 !important;
+        font-weight: 500 !important;
     }
 
     .navbar {
         padding-left: 15px !important;
         padding-right: 15px !important;
+    }
+
+    .navbar-collapse ul {
+        height: 100vh;
     }
 
 }

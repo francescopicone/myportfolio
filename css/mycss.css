@@ -27,6 +27,15 @@ html, body {
     transition-duration: 1s;
 }
 
+.coldx-npt {
+    background-color: #F0E7DB;
+    color: black;
+    padding-top: 100px;
+    padding-left: 50px;
+    min-height: 100% !important;
+    transition-duration: 1s;
+}
+
 .welcome {
     font-size: 72pt;
     transition-duration: 1s;
@@ -60,7 +69,7 @@ html, body {
     margin-top: 50px;
     font-weight: 400;
     transition-duration: 1s;
-    font-size: 13pt;
+    font-size: 12pt;
 }
 
 .particle {
@@ -111,10 +120,9 @@ html, body {
     background-color: white !important;
     padding: 20px;
     width: 300px;
-    height: 180px;
+    height: 300px;
     border: none;
     margin-top: 50px;
-    border-radius: 15px;
     background-size: contain;
     background-position-x: 50% !important;
     background-position-y: 47% !important;
@@ -126,6 +134,98 @@ html, body {
     transform: scale(1.1);
 }
 
+.typewrite {
+    text-decoration: none !important;
+}
+
+
+/* ANIMATIONS */
+
+/** FadeInUp **/
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/** FadeIn **/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fadeIn {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+
+
+
+/* ANIMATIONS */
+
 @media only screen and (max-width: 600px) {
     .welcome {
         font-size: 36pt;
@@ -136,12 +236,18 @@ html, body {
         padding-top: 125px;
     }
 
+    .coldx-npt {
+        padding-left: 15px;
+        padding-top: 75px;
+    }
+
     .colsx {
         max-width: 70px;
     }
 
     .nav-link {
         font-weight: 500 !important;
+        text-align: end;
     }
 
     .navbar {
@@ -154,7 +260,9 @@ html, body {
     }
 
     .work-card {
-        width: 100%;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
     }
 
 }

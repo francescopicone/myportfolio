@@ -90,7 +90,7 @@ html, body {
     max-width: 600px;
     margin-top: 50px;
     font-weight: 400;
-    font-size: 14pt;
+    font-size: 11pt;
     transition-duration: 1s;
     color: #ccd6f6;
 }
@@ -130,6 +130,7 @@ html, body {
 
 .social-icon {
     color: white;
+    transition-duration: 0.5s;
 }
 
 .social-icon:hover {
@@ -157,7 +158,7 @@ html, body {
 .work-card  {
     background-color: #112442 !important;
     z-index: 99999;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 20px;
     width: 300px;
     border: none;
@@ -189,13 +190,24 @@ html, body {
 }
 
 .btn-rounded {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     outline: none;
     border: 1px solid;
     border-color: #64FFDA;
     background-color: transparent;
     border-radius: 50%;
+    transition-duration: 0.5s;
+    color: #64FFDA;
+}
+
+.btn-rounded:hover {
+    background-color: #64FFDA;
+    color: #0A192F !important;
+}
+
+.project-icon-big {
+    font-size: 2em !important;
 }
 
 

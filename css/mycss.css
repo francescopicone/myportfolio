@@ -1,25 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+
 
 html, body {
-    background-color: #1c1c1c;
+    background-color: #0A192F;
     font-family: Poppins;
     height: 100%;
     transition-duration: 1s !important;
 
 }
 
+.codetext {
+    font-family: "Source Code Pro";
+}
+
 .colsx {
-    background-color: white;
+    background-color: #0A192F;
     max-width: 25%;
     min-height: 100% !important;
     transition-duration: 1s;
 }
 
 .coldx {
-    background-color: #F0E7DB;
+    background-color: #0A192F;
     color: black;
     padding-top: 250px;
     padding-left: 50px;
@@ -28,9 +31,9 @@ html, body {
 }
 
 .coldx-npt {
-    background-color: #F0E7DB;
+    background-color: #0A192F;
     color: black;
-    padding-top: 100px;
+    padding-top: 250px;
     padding-left: 50px;
     min-height: 100% !important;
     transition-duration: 1s;
@@ -39,17 +42,18 @@ html, body {
 .welcome {
     font-size: 72pt;
     transition-duration: 1s;
+    color: ghostwhite;
 }
 
 .bluedot {
-    color: #0b5ed7;
+    color: #64FFDA;
     font-size: 48pt;
     line-height: 10px;
 
 }
 
 .bluedot-small {
-    color: #0b5ed7;
+    color: #64FFDA;
     font-size: 32pt;
     line-height: 10px;
 
@@ -59,17 +63,37 @@ html, body {
     color: #6e6e6e;
 }
 
+.acqua {
+    color: #64FFDA !important;
+}
+
+.lightblue {
+    color: #ccd6f6;
+}
+
+.codetext {
+    color: #64FFDA;
+}
+
+.title {
+    color: ghostwhite;
+
+}
+
 .navbar-brand {
     font-weight: 500;
     font-size: 150%;
+    color: white !important;
 }
 
 .description {
     max-width: 600px;
     margin-top: 50px;
     font-weight: 400;
+    font-size: 18pt;
     transition-duration: 1s;
     font-size: 12pt;
+    color: ghostwhite;
 }
 
 .particle {
@@ -81,6 +105,7 @@ html, body {
     padding-left: 100px !important;
     padding-right: 100px !important;
     transition-duration: 1s;
+    background-color: initial;
 }
 
 .navbar-toggler {
@@ -91,6 +116,8 @@ html, body {
 
 .subtext {
     font-weight: 600;
+    font-size: 18pt;
+    color: #ccd6f6;
 }
 
 .blurred {
@@ -98,7 +125,15 @@ html, body {
     backdrop-filter: blur(10px);
 }
 
-#section-welcome, #section-whoiam, #section-works {
+.social-icon {
+    color: white;
+}
+
+.social-icon:hover {
+    color: #64FFDA;
+}
+
+#section-welcome, #section-whoiam, #section-works, #section-skills, #section-contacts {
     height: 100% !important;
 }
 
@@ -137,6 +172,12 @@ html, body {
 .typewrite {
     text-decoration: none !important;
 }
+
+
+progress { background-color: #64FFDA !important; border-radius: 0% !important; height: 10px !important; width: 100%;}
+progress::-moz-progress-bar { background: #64FFDA !important; }
+progress::-webkit-progress-value { background: #64FFDA !important; }
+
 
 
 /* ANIMATIONS */
@@ -263,6 +304,10 @@ html, body {
         display: inline-block;
         width: 100px;
         height: 100px;
+    }
+
+    .description {
+        font-size: 11pt;
     }
 
 }

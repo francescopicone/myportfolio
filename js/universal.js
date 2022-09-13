@@ -6,20 +6,28 @@ $( "#sitemode" ).click(function() {
 
         // Modalità dark
 
-        $("#sitemode").attr('style', 'box-shadow: 0px 5px 0px 0px #ffb14b;');
-        $("#sitemode").css("background-color", "#ffed3f");
+        $("#sitemode").attr('style', 'box-shadow: 0px 5px 0px 0px #4DC4A6FF;');
+        $("#sitemode").css("background-color", "#64FFDA");
         $("#sitemode").css("fill", "#212121FF");
-        $(".colsx").css("background-color", "#212121FF");
-        $(".coldx").css("background-color", "black");
-        $(".coldx-npt").css("background-color", "black");
+        //$(".colsx").css("background-color", "#212121FF");
+        $(".colsx").css("background-color", "#0A192F");
+        $(".coldx").css("background-color", "#0A192F");
+        $(".coldx-npt").css("background-color", "#0A192F");
         $(".welcome").css("color", "white");
+        $(".subtext").css("color", "#ccd6f6");
         $(".social-icon").css("color", "white");
         $(".navbar-brand").css("color", "white");
         $(".nav-link").css("color", "white");
+        $(".bluedot").css("color", "#64FFDA");
+        $(".bluedot-small").css("color", "#64FFDA");
         $(".description").removeClass('gray');
         $(".description").addClass('text-white');
         $(".navbar").removeClass("navbar-light");
         $(".navbar").addClass('navbar-dark');
+        $(".particle").addClass('particle-dark');
+        $(".particle").removeClass('particle');
+        $(".navbar").css("background-color", "initial");
+
 
 
         isDark = true;
@@ -39,12 +47,15 @@ $( "#sitemode" ).click(function() {
         $(".social-icon").css("color", "black");
         $(".navbar-brand").css("color", "black");
         $(".nav-link").css("color", "black");
+        $(".bluedot").css("color", "#0b5ed7");
+        $(".bluedot-small").css("color", "#0b5ed7");
         $(".description").removeClass('text-white');
         $(".description").addClass('gray');
         $(".navbar").removeClass('navbar-dark');
         $(".navbar").addClass("navbar-light");
-        $(".particle").addClass("particlel")
-        // $(".particle").removeClass("particle")
+        $(".particle-dark").addClass('particle');
+        $(".particle-dark").removeClass('particle-dark');
+
 
 
         isDark = false;
@@ -111,6 +122,7 @@ $( "#sitemode" ).click(function() {
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
+
     };
 
 

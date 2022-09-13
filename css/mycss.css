@@ -25,7 +25,7 @@ html, body {
     background-color: #0A192F;
     color: black;
     padding-top: 250px;
-    padding-left: 50px;
+    padding-left: 400px;
     min-height: 100% !important;
     transition-duration: 1s;
 }
@@ -34,7 +34,7 @@ html, body {
     background-color: #0A192F;
     color: black;
     padding-top: 250px;
-    padding-left: 50px;
+    padding-left: 400px;
     min-height: 100% !important;
     transition-duration: 1s;
 }
@@ -83,17 +83,16 @@ html, body {
 .navbar-brand {
     font-weight: 500;
     font-size: 150%;
-    color: white !important;
+    color: ghostwhite !important;
 }
 
 .description {
     max-width: 600px;
     margin-top: 50px;
     font-weight: 400;
-    font-size: 18pt;
+    font-size: 14pt;
     transition-duration: 1s;
-    font-size: 12pt;
-    color: ghostwhite;
+    color: #ccd6f6;
 }
 
 .particle {
@@ -156,15 +155,13 @@ html, body {
 
 
 .work-card  {
-    background-color: white !important;
+    background-color: #112442 !important;
+    z-index: 99999;
+    border-radius: 10px;
     padding: 20px;
     width: 300px;
-    height: 300px;
     border: none;
     margin-top: 50px;
-    background-size: contain;
-    background-position-x: 50% !important;
-    background-position-y: 47% !important;
     transition-duration: 1s;
     outline: none;
 }
@@ -177,11 +174,88 @@ html, body {
     text-decoration: none !important;
 }
 
+.nav-link {
+    color: #ccd6f6 !important;
+}
 
-progress { background-color: #64FFDA !important; border-radius: 0% !important; height: 10px !important; width: 100%;}
+.animoji {
+    background-color: #64FFDA;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0px 0px #ccd6f6;
+}
+
+.row-w75 {
+    max-width: 75%;
+}
+
+.btn-rounded {
+    width: 75px;
+    height: 75px;
+    outline: none;
+    border: 1px solid;
+    border-color: #64FFDA;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+
+progress { background-color: #64FFDA !important; border-radius: 0% !important; height: 5px !important; width: 100%;}
 progress::-moz-progress-bar { background: #64FFDA !important; }
 progress::-webkit-progress-value { background: #64FFDA !important; }
 
+
+/* NAVBAR TOGGLE */
+
+.navbar-toggler span {
+    display: block;
+    background-color: #64FFDA;
+    height: 3px;
+    width: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+    border-radius: 10px;
+}
+
+
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+    width: 28px;
+}
+
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+    width: 21px;
+}
+
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+    width: 35px;
+}
+
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+    width: 25px;
+    height: 3px;/* normal 45 deg */
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+    width: 25px;
+    height: 3px/* normal -45 deg */
+}
 
 
 /* ANIMATIONS */
@@ -277,12 +351,12 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
     }
 
     .coldx {
-        padding-left: 15px;
+        padding-left: 60px;
         padding-top: 125px;
     }
 
     .coldx-npt {
-        padding-left: 15px;
+        padding-left: 60px;
         padding-top: 75px;
     }
 
@@ -292,7 +366,7 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
 
     .nav-link {
         font-weight: 500 !important;
-        text-align: end;
+        text-align: start;
     }
 
     .navbar {
@@ -306,12 +380,20 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
 
     .work-card {
         display: inline-block;
-        width: 100px;
-        height: 100px;
+        width: 100%;
     }
 
     .description {
         font-size: 11pt;
+    }
+
+    .animoji {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .row-w75 {
+        max-width: 100%;
     }
 
 }

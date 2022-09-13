@@ -1,3 +1,7 @@
+.particle-container {
+   opacity: 0% !important;
+}
+
 .particle-dark {
     position: fixed;
     border-radius: 50%;

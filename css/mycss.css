@@ -141,6 +141,10 @@ html, body {
     min-height: 100% !important;
 }
 
+#footer {
+
+}
+
 #sitemode {
     background-color: #002173;
     fill: white;

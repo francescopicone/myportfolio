@@ -164,6 +164,7 @@ html, body {
 
 .work-card  {
     background-color: #112442 !important;
+    box-shadow: 0 10px 30px -15px #020c1bb3;
     z-index: 99999;
     border-radius: 5px;
     padding: 20px;

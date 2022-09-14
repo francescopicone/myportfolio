@@ -169,10 +169,20 @@ html, body {
     margin-top: 50px;
     transition-duration: 1s;
     outline: none;
+
 }
 
 .work-card:hover {
     transform: scale(1.1);
+}
+
+.card-description {
+    height: 150px;
+}
+
+.card-technologies {
+    height: 30px;
+    margin-bottom: 15px;
 }
 
 .typewrite {

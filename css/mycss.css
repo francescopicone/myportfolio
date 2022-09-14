@@ -215,9 +215,24 @@ html, body {
     color: #64FFDA;
 }
 
+.btn-rounded-lg {
+    padding: 12px 15px 12px 15px;
+    outline: none;
+    border: 1px solid;
+    border-color: #64FFDA;
+    background-color: transparent;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    color: #64FFDA;
+}
+
 .btn-rounded:hover {
-    background-color: #64FFDA;
-    color: #0A192F !important;
+    background-color: rgba(100,255,218,0.1);
+    /* color: #0A192F !important; */
+}
+
+.btn-rounded-lg:hover {
+    background-color: rgba(100,255,218,0.1);
 }
 
 .project-icon-big {
@@ -228,6 +243,10 @@ html, body {
 progress { background-color: #64FFDA !important; border-radius: 0% !important; height: 5px !important; width: 100%;}
 progress::-moz-progress-bar { background: #64FFDA !important; }
 progress::-webkit-progress-value { background: #64FFDA !important; }
+
+.progress-bar { background-color: #64FFDA !important; border-radius: 0% !important; height: 5px !important;}
+.progress { height: 5px; border-radius: 0%; background-color: gray;}
+.progress-bar-striped {background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 75%, transparent 75%, transparent);}
 
 
 /* NAVBAR TOGGLE */
@@ -420,6 +439,10 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
 
     .row-w75 {
         max-width: 100%;
+    }
+
+    .progress {
+        width: 100% !important;
     }
 
 }

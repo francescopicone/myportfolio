@@ -138,7 +138,7 @@ html, body {
 }
 
 #section-welcome, #section-whoiam, #section-works, #section-skills, #section-contacts {
-    height: 100% !important;
+    min-height: 100% !important;
 }
 
 #sitemode {

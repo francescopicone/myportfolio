@@ -194,6 +194,11 @@ html, body {
 
 }
 
+.carousel-image-project {
+    height: 250px;
+
+}
+
 .typewrite {
     text-decoration: none !important;
 }
@@ -482,6 +487,11 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
     .title-divider {
         background-color: #64FFDA;
         max-width: 75%;
+    }
+
+    .carousel-image-project {
+        height: 160px;
+
     }
 
 }

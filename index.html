@@ -18,7 +18,7 @@
 
     <body>
 
-    <div id="particle-container" class="particle-container opacity-25">
+    <!-- <div id="particle-container" class="particle-container opacity-25">
         <div class="particle-dark"></div>
         <div class="particle-dark"></div>
         <div class="particle-dark"></div>
@@ -49,7 +49,7 @@
         <div class="particle-dark"></div>
         <div class="particle-dark"></div>
         <div class="particle-dark"></div>
-    </div>
+    </div>-->
 
     <div class="icons-bar">
         <a href="https://www.facebook.com/franci.picone" class="facebook"><i class="fa fa-facebook social-icon"></i></a>
@@ -66,14 +66,14 @@
         </button>
     </div> -->
 
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark blurred" style="padding-left: 15px; padding-right: 15px;"> <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark blurred" style="padding-left: 15px; padding-right: 15px;">
                 <a class="navbar-brand" href="#">
-                    <!-- <img src="resources/animoji.png" alt="" height="32" class="d-inline-block"> -->
-                    <b>francescopicone<span class="bluedot-small">.</span></b>
+                    <img src="resources/animoji.png" alt="" height="48" class="d-inline-block" style="background-color: white; border-radius: 50%">
+                    <b></b>
                 </a>
-                <!--<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" style="fill: #64FFDA;"></span>
-                </button> -->
+                </button>
 
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,67 +100,51 @@
                         </li>
                     </ul>
                 </div>
-        </nav>
+        </nav> -->
+
+
 
     <!-- Contenuto pagina -->
 
-
-    <div class="container-fluid h-100">
-        <section id="section-welcome">
-        <div class="row h-100">
-            <div class="col coldx">
-
-                <h5 class="codetext mt-5">Hi, my name is</h5>
-                <!--<h1 class="welcome animated animatedFadeInUp fadeInUp">Hello, <br>i'm <br>--><h1 class="welcome animated animatedFadeInUp fadeInUp"><b>Francesco<br>Picone<span class="bluedot">.</span></b></h1>
-
-                <h5 class="mt-5 animated animatedFadeInUp fadeInUp">
-                    <a href="" class="typewrite gray mt-5 subtext" data-period="2000" data-type='[ "Junior web developer.", "Computer science student."]'>
-                        <span class="wrap"></span>
-                    </a>
-                </h5>
-
-                    <button class="btn-rounded mt-5" onclick="location.href='#section-whoiam';">
-                        <i class="fa fa-arrow-down"></i>
-                    </button>
+    <div class="container-fluid ps-5 pt-5">
+        <div class="row">
+            <div class="col-auto ps-3 pt-3" style="max-width: 50px;">
+                <img src="resources/animoji.png" alt="" height="64" class="" style="background-color: white; border-radius: 50%">
+            </div>
+            <div class="col-auto ps-5 pt-3">
+                <b style="color: white;  font-size: 14pt;">Hi, i am Francesco Picone</b><br>
+                    <a href="" class="typewrite gray codetext small" data-period="2000"  data-type='[ "Software developer", "Web developer"]'></a>
             </div>
         </div>
-        </section>
+
+    <div class="row">
+        <div class="col-100 ps-3 pt-5">
+            <button class="big-button" data-bs-toggle="modal" data-bs-target="#whoiam-modal">Who I am ?</button>
+    </div>
     </div>
 
-    <div class="container-fluid container-contents">
-        <section id="section-whoiam">
-            <div class="row">
-                <div class="col coldx-npt">
-                    <span class="codetext mt-5">01.</span><span class="title fs-2 fw-bold">About me</span>
-                    <div class="dropdown-divider title-divider" ></div>
-
-                    <div class="row">
-                        <div class="col-md">
-                            <p class="description">My name is <span class="acqua">Francesco</span>, I am 27 years old and I come from Caserta, Italy.<br><br>
-
-                            I am passionate about computers, and everything related to technology.<br><br>
-
-                            I am currently a Computer Science Student at the <span class="acqua">University of Naples "Parthenope"</span>, I also participated in
-                            <span class="acqua">Apple's iOS Foundation Program</span>, an academic program in collaboration with Apple to offer courses aimed at creating potentially valid iOS apps.</p>
-
-                        </div>
-
-
-                        <div class="col-md text-center justify-content-center">
-                            <div class="animoji-container text-center mt-1">
-                                <img class="animoji" src="resources/animoji.png"><br>
-                            </div>
-                            <button class="btn-rounded-lg small mt-2 codetext mt-5 mml--50" onclick="location.href='#section-skills';">See my skills</button>
-                        </div>
-
-                    </div>
-
+    <div class="modal fade" id="whoiam-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content p-4" style="background-color: #101010; border: none; box-shadow: 0 10px 30px -15px #020c1bb3; outline: none; font-family: Poppins;">
+                <div class="modal-header lightblue" style="border: none !important;">
+                    <h5 class="modal-title text-white acqua">Who i am ?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <p class="description mt-3 ms-3">My name is <span class="acqua">Francesco</span>, I am 28 years old and I come from Caserta, Italy.<br><br>
+                    I am passionate about computers, and everything related to technology.<br><br>
+                    I am currently a Computer Science Student at the <span class="acqua">University of Naples "Parthenope"</span>, I also participated in
+                    <br><span class="acqua">Apple's iOS Foundation Program</span>, an academic program in collaboration with Apple to offer courses aimed <br>
+                    at creating potentially valid iOS apps.</p>
+                <div class="modal-footer" style="border: none !important;">
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
 
 
-        <section id="section-skills">
+    <div class="container-fluid container-contents">
+
+        <!-- <section id="section-skills">
             <div class="row">
                 <div class="col coldx-npt">
                     <span class="codetext mt-5">02.</span><span class="title fs-2 fw-bold">Skills</span>
@@ -208,17 +192,14 @@
 
                 </div>
             </div>
-
-
-
-        </section>
+        </section> -->
 
         <section id="section-works">
             <div class="row">
-                <div class="col coldx-npt">
-                    <span class="codetext mt-5">03.</span><span class="title fs-2 fw-bold">Projects</span>
+                <div class="col-100 mt-5">
+                    <span class="title fs-4 fw-bold text-white">Some projects</span>
                     <div class="dropdown-divider title-divider" ></div>
-                    <h6 class="acqua">Section under construction.</h6>
+                    <h6 class="acqua codetext small">Section under construction.</h6>
                     <div class="row">
 
 
@@ -230,13 +211,12 @@
                                          <i class="fa fa-window-maximize acqua project-icon-big"></i>
                                      </div>
                                      <div class="col text-end mb-4">
-                                         <i class="fa fa-github lightblue project-icon fa-lg"></i>
+                                         <i class="fa fa-github text-white project-icon fa-lg"></i>
                                      </div>
                                  </div>
-                                    <span class="lightblue fs-5 lh-1 codetext text-white fw-bold">Easybook</span><br>
+                                    <span class="text-white fs-5 lh-1 codetext text-white fw-bold">Easybook</span><br>
                                 <span class="lightblue small">2022</span><br>
-                                <p class="mt-3 lightblue small card-description">EasyBook was created as a result of the needs created in the aftermath of the Sars-COV-2 pandemic, encouraging increasing digitization of various sectors.
-                                    These include the cultural sector and specifically libraries.
+                                <p class="mt-3 text-white small card-description">EasyBook was created as a result of the needs created in the aftermath of the...
                                 </p>
                                 <div class="card-technologies">
                                     <span class="small acqua codetext">Html 	&#9679; Css 	&#9679; Javascript 	&#9679; Python &#9679; Flask &#9679; MySql &#9679; Bootstrap</span>
@@ -253,13 +233,12 @@
                                         <i class="fa fa-apple acqua project-icon-big"></i>
                                     </div>
                                     <div class="col text-end mb-4">
-                                        <i class="fa fa-github lightblue project-icon fa-lg"></i>
+                                        <i class="fa fa-github text-white project-icon fa-lg"></i>
                                     </div>
                                 </div>
-                                <span class="lightblue fs-5 lh-1 codetext text-white fw-bold">Vibry</span><br>
+                                <span class="text-white fs-5 lh-1 codetext text-white fw-bold">Vibry</span><br>
                                 <span class="lightblue small">2018</span><br>
-                                <p class="mt-3 lightblue small card-description">Vibry was created to meet the needs of the hearing-impaired. It allows through the use of smartphone vibrations to listen to music tracks, voice audio and more.
-                                    Developed during the ios foundation program for iPhone.
+                                <p class="mt-3 text-white small card-description">Vibry was created to meet the needs of the hearing-impaired. It allows through the...
                                 </p>
                                 <div class="card-technologies">
                                     <span class="acqua small codetext">Swift</span>
@@ -276,13 +255,13 @@
                                             <i class="fa fa-terminal project-icon-big acqua"></i>
                                         </div>
                                         <div class="col text-end mb-4">
-                                            <i class="fa fa-github lightblue project-icon fa-lg"></i>
+                                            <i class="fa fa-github text-white project-icon fa-lg"></i>
                                         </div>
                                     </div>
-                                    <span class="lightblue fs-5 lh-1 codetext text-white fw-bold">PhoneBook</span><br>
+                                    <span class="text-white fs-5 lh-1 codetext text-white fw-bold">PhoneBook</span><br>
                                     <span class="lightblue small">2018</span><br>
-                                    <p class="mt-3 lightblue small card-description">
-                                        Phonebook is a simple phone book developed for university purposes. It has the simple task of storing and managing telephone contacts, it also has features such as searching and editing them.
+                                    <p class="mt-3 text-white small card-description">
+                                        Phonebook is a simple phone book developed for university purposes...
                                     </p>
                                     <div class="card-technologies">
                                         <span class="acqua small codetext">C</span>
@@ -294,8 +273,8 @@
                         <!-- Modal EasyBook -->
                         <div class="modal fade" id="easyBookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.5);">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content p-4" style="background-color: #112442; border: none; box-shadow: 0 10px 30px -15px #020c1bb3; outline: none; font-family: Poppins;">
-                                    <div class="modal-header lightblue" style="border: none !important;">
+                                <div class="modal-content p-4" style="background-color: #121212; border: none; box-shadow: 0 10px 30px -15px #020c1bb3; outline: none; font-family: Poppins;">
+                                    <div class="modal-header text-white" style="border: none !important;">
                                         <h5 class="modal-title fs-3">EasyBook</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
@@ -320,10 +299,10 @@
                                     </div>
 
                                     <div class="modal-body small">
-                                        <p class="mt-3 lightblue small">EasyBook was created as a result of the needs created in the aftermath of the Sars-COV-2 pandemic, encouraging increasing digitization of various sectors.
+                                        <p class="mt-3 text-white small">EasyBook was created as a result of the needs created in the aftermath of the Sars-COV-2 pandemic, encouraging increasing digitization of various sectors.
                                             These include the cultural sector and specifically libraries.
                                         </p>
-                                        <h6 class="lightblue mb-2 mt-3">Technologies used</h6>
+                                        <h6 class="text-white mb-2 mt-3">Technologies used</h6>
                                         <span class="small acqua codetext">Html 	&#9679; Css 	&#9679; Javascript 	&#9679; Python &#9679; Flask &#9679; MySql &#9679; Bootstrap</span>
                                     </div>
                                     <div class="modal-footer" style="border: none !important;">
@@ -337,16 +316,16 @@
                         <!-- Modal Vibry -->
                         <div class="modal fade" id="vibryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.5);">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content p-4" style="background-color: #112442; border: none; box-shadow: 0 10px 30px -15px #020c1bb3; outline: none; font-family: Poppins;">
-                                    <div class="modal-header lightblue" style="border: none !important;">
+                                <div class="modal-content p-4" style="background-color: #111111; border: none; box-shadow: 0 10px 30px -15px #020c1bb3; outline: none; font-family: Poppins;">
+                                    <div class="modal-header text-white" style="border: none !important;">
                                         <h5 class="modal-title fs-3" id="exampleModalLabel">Vibry</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body small">
-                                        <p class="mt-3 lightblue small">Vibry was created to meet the needs of the hearing-impaired. It allows through the use of smartphone vibrations to listen to music tracks, voice audio and more.
+                                        <p class="mt-3 text-white small">Vibry was created to meet the needs of the hearing-impaired. It allows through the use of smartphone vibrations to listen to music tracks, voice audio and more.
                                             Developed during the ios foundation program for iPhone.
                                         </p>
-                                        <h6 class="lightblue mt-3">Technologies used</h6>
+                                        <h6 class="text-white mt-3">Technologies used</h6>
                                         <span class="acqua small codetext">Swift</span>
                                     </div>
                                     <div class="modal-footer" style="border: none !important;">
@@ -358,8 +337,8 @@
                         <!-- Modal PhoneBook -->
                         <div class="modal fade" id="phonebookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.5);">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content p-4" style="background-color: #112442; border: none; box-shadow: 0 10px 30px -15px #020c1bb3; outline: none; font-family: Poppins;">
-                                    <div class="modal-header lightblue" style="border: none !important;">
+                                <div class="modal-content p-4" style="background-color: #111111; border: none; box-shadow: 0 10px 30px -15px #020c1bb3; outline: none; font-family: Poppins;">
+                                    <div class="modal-header text-white" style="border: none !important;">
                                         <h5 class="modal-title fs-3">PhoneBook</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
@@ -381,10 +360,10 @@
                                     </div>
 
                                     <div class="modal-body small">
-                                        <p class="mt-3 lightblue small">
+                                        <p class="mt-3 text-white small">
                                             Phonebook is a simple phone book developed for university purposes. It has the simple task of storing and managing telephone contacts, it also has features such as searching and editing them.
                                         </p>
-                                        <h6 class="lightblue mb-2 mt-3">Technologies used</h6>
+                                        <h6 class="text-white mb-2 mt-3">Technologies used</h6>
                                         <span class="small acqua codetext">C</span>
                                     </div>
                                     <div class="modal-footer" style="border: none !important;">

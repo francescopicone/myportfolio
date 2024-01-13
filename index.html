@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/iconbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="theme-color" content="#0A192F" />
+        <meta name="theme-color" content="#050505" />
 
 
     </head>
@@ -106,7 +106,7 @@
 
     <!-- Contenuto pagina -->
 
-    <div class="container-fluid ps-5 pt-5">
+    <div class="container-fluid ps-35 pt-5">
         <div class="row">
             <div class="col-auto ps-3 pt-3" style="max-width: 50px;">
                 <img src="resources/animoji.png" alt="" height="64" class="" style="background-color: white; border-radius: 50%">
@@ -117,9 +117,9 @@
             </div>
         </div>
 
-    <div class="row">
+    <div class="row ps-2 pe-2">
         <div class="col-100 ps-3 pt-5">
-            <button class="big-button" data-bs-toggle="modal" data-bs-target="#whoiam-modal">Who I am ?</button>
+            <button class="big-button codetext w-100" data-bs-toggle="modal" data-bs-target="#whoiam-modal">Who I am ?</button>
     </div>
     </div>
 
@@ -199,76 +199,91 @@
                 <div class="col-100 mt-5">
                     <span class="title fs-4 fw-bold text-white">Some projects</span>
                     <div class="dropdown-divider title-divider" ></div>
-                    <h6 class="acqua codetext small">Section under construction.</h6>
+                    <!-- <h6 class="acqua codetext small">Section under construction.</h6> -->
                     <div class="row">
 
 
-                        <div class="col-auto">
-                            <a class="text-decoration-none outline-none" href="#" data-bs-toggle="modal" data-bs-target="#easyBookModal">
-                                <div class="work-card small">
-                                    <div class="row">
-                                     <div class="col-auto">
-                                         <i class="fa fa-window-maximize acqua project-icon-big"></i>
-                                     </div>
-                                     <div class="col text-end mb-4">
-                                         <i class="fa fa-github text-white project-icon fa-lg"></i>
-                                     </div>
-                                 </div>
-                                    <span class="text-white fs-5 lh-1 codetext text-white fw-bold">Easybook</span><br>
-                                <span class="lightblue small">2022</span><br>
-                                <p class="mt-3 text-white small card-description">EasyBook was created as a result of the needs created in the aftermath of the...
-                                </p>
-                                <div class="card-technologies">
-                                    <span class="small acqua codetext">Html 	&#9679; Css 	&#9679; Javascript 	&#9679; Python &#9679; Flask &#9679; MySql &#9679; Bootstrap</span>
-                                </div>
-                                </div>
-                            </a>
-                        </div>
 
-                        <div class="col-auto">
-                            <a class="text-decoration-none outline-none" href="#" data-bs-toggle="modal" data-bs-target="#vibryModal">
-                            <div class="work-card small">
-                                <div class="row">
-                                    <div class="col-auto">
-                                        <i class="fa fa-apple acqua project-icon-big"></i>
-                                    </div>
-                                    <div class="col text-end mb-4">
-                                        <i class="fa fa-github text-white project-icon fa-lg"></i>
-                                    </div>
+
+
+
+                        <div id="carousel_PROJECTS" class="carousel slide mt-0" data-bs-ride="carousel"> <!-- style="border: 1px solid; border-color: #64FFDA; border-radius: 5px;" -->
+                            <ol class="carousel-indicators" style="margin-bottom: -25px !important;">
+                                <li data-bs-target="#carousel_PROJECTS" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carousel_PROJECTS" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#carousel_PROJECTS" data-bs-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner mt-0">
+                                <div class="carousel-item active">
+                                    <a class="text-decoration-none outline-none" href="#" data-bs-toggle="modal" data-bs-target="#easyBookModal">
+                                        <div class="work-card small mt-3">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <i class="fa fa-window-maximize acqua project-icon-big"></i>
+                                                </div>
+                                                <div class="col text-end mb-4">
+                                                    <i class="fa fa-github text-white project-icon fa-lg"></i>
+                                                </div>
+                                            </div>
+                                            <span class="text-white fs-5 lh-1 codetext text-white fw-bold">Easybook</span><br>
+                                            <span class="lightblue small">2022</span><br>
+                                            <p class="mt-3 text-white small card-description">EasyBook was created as a result of the needs created in the aftermath of the...
+                                            </p>
+                                            <div class="card-technologies">
+                                                <span class="small acqua codetext">Html 	&#9679; Css 	&#9679; Javascript 	&#9679; Python &#9679; Flask &#9679; MySql &#9679; Bootstrap</span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <span class="text-white fs-5 lh-1 codetext text-white fw-bold">Vibry</span><br>
-                                <span class="lightblue small">2018</span><br>
-                                <p class="mt-3 text-white small card-description">Vibry was created to meet the needs of the hearing-impaired. It allows through the...
-                                </p>
-                                <div class="card-technologies">
-                                    <span class="acqua small codetext">Swift</span>
+
+                                <div class="carousel-item">
+                                    <a class="text-decoration-none outline-none" href="#" data-bs-toggle="modal" data-bs-target="#vibryModal">
+                                        <div class="work-card small mt-3">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <i class="fa fa-apple acqua project-icon-big"></i>
+                                                </div>
+                                                <div class="col text-end mb-4">
+                                                    <i class="fa fa-github text-white project-icon fa-lg"></i>
+                                                </div>
+                                            </div>
+                                            <span class="text-white fs-5 lh-1 codetext text-white fw-bold">Vibry</span><br>
+                                            <span class="lightblue small">2018</span><br>
+                                            <p class="mt-3 text-white small card-description">Vibry was created to meet the needs of the hearing-impaired. It allows through the...
+                                            </p>
+                                            <div class="card-technologies">
+                                                <span class="acqua small codetext">Swift</span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
+
+                                <div class="carousel-item">
+                                    <a class="text-decoration-none outline-none" href="#" data-bs-toggle="modal" data-bs-target="#phonebookModal">
+                                        <div class="work-card small mt-3">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <i class="fa fa-terminal project-icon-big acqua"></i>
+                                                </div>
+                                                <div class="col text-end mb-4">
+                                                    <i class="fa fa-github text-white project-icon fa-lg"></i>
+                                                </div>
+                                            </div>
+                                            <span class="text-white fs-5 lh-1 codetext text-white fw-bold">PhoneBook</span><br>
+                                            <span class="lightblue small">2018</span><br>
+                                            <p class="mt-3 text-white small card-description">
+                                                Phonebook is a simple phone book developed for university purposes...
+                                            </p>
+                                            <div class="card-technologies">
+                                                <span class="acqua small codetext">C</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
                             </div>
-                            </a>
                         </div>
 
-                        <div class="col-auto">
-                            <a class="text-decoration-none outline-none" href="#" data-bs-toggle="modal" data-bs-target="#phonebookModal">
-                                <div class="work-card small">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <i class="fa fa-terminal project-icon-big acqua"></i>
-                                        </div>
-                                        <div class="col text-end mb-4">
-                                            <i class="fa fa-github text-white project-icon fa-lg"></i>
-                                        </div>
-                                    </div>
-                                    <span class="text-white fs-5 lh-1 codetext text-white fw-bold">PhoneBook</span><br>
-                                    <span class="lightblue small">2018</span><br>
-                                    <p class="mt-3 text-white small card-description">
-                                        Phonebook is a simple phone book developed for university purposes...
-                                    </p>
-                                    <div class="card-technologies">
-                                        <span class="acqua small codetext">C</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
 
                         <!-- Modal EasyBook -->
                         <div class="modal fade" id="easyBookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.5);">
@@ -371,9 +386,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
@@ -382,7 +394,8 @@
         <section id="section-contacts">
             <div class="row mt-0">
                 <div class="col pt-topcol">
-                    <span class="title fs-1 fw-bold text-white">Contact me</span><br>
+                    <span class="title fs-4 fw-bold text-white">Contact me</span><br>
+                    <div class="dropdown-divider title-divider" ></div>
                     <button class="w-100 btn-rounded-lg small mt-3 mb-3 codetext" onclick="location.href='mailto:frapic95@gmail.com';">Send me a message&nbsp;<i class="fa fa-paper-plane acqua"></i></button>
                 </div>
 

@@ -255,7 +255,7 @@ html, body {
 
 .title-divider {
     background-color: #64FFDA;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .pt-topcol {
@@ -509,7 +509,7 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
 
     .title-divider {
         background-color: #64FFDA;
-        max-width: 75%;
+        max-width: 100%;
     }
 
     .carousel-image-project {

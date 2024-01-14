@@ -3,12 +3,11 @@
 
 
 html, body {
-    /*background-color: ;*/
-    background-color: #050505;
-    font-family: Poppins;
+    background-color: #000e26;
+    /*font-family: Poppins;*/
     height: 100%;
     transition-duration: 1s !important;
-
+    justify-content: center !important;
 }
 
 .container-contents {
@@ -92,7 +91,7 @@ html, body {
     max-width: 1000px;
     margin-top: 50px;
     font-weight: 400;
-    font-size: 10pt;
+    font-size: 12pt;
     transition-duration: 1s;
     color: white;
 }
@@ -163,7 +162,7 @@ html, body {
 
 
 .work-card  {
-    background-color: #111111 !important;
+    background-color: #061b3f !important;
     box-shadow: 0 10px 30px -15px #020c1bb3;
     z-index: 99999;
     border-radius: 5px;
@@ -177,7 +176,7 @@ html, body {
 }
 
 .work-card:hover {
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
 }
 
 .card-description {
@@ -486,7 +485,7 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
     }
 
     .description {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     .animoji {

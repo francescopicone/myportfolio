@@ -3,15 +3,44 @@
 
 
 html, body {
-    background-color: #000e26;
+    background-color: rgba(247, 249, 255, 0.3);
     /*font-family: Poppins;*/
     height: 100%;
     transition-duration: 1s !important;
     justify-content: center !important;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.avatar {
+
+}
+
+.fig {
+    margin: 0;
+    z-index: 1;
+    border-radius: 50%;
+    padding: 10px;
+    width: 277px;
+    height: 277px;
+    position: relative;
+    border: 0.115rem solid #fff;
+}
+
+#avatar-shapes {
+    z-index: -1;
+    position: absolute;
+    top: -5.4em;
+    right: -6em;
+    top: -0.6em;
+    width: 40em;
+    height: 126%;
+    color: whitesmoke !important;
 }
 
 .container-contents {
-    max-width: 1200px !important;
+    max-width: 1600px !important;
 }
 
 .codetext {
@@ -43,7 +72,6 @@ html, body {
 .welcome {
     font-size: 72pt;
     transition-duration: 1s;
-    color: ghostwhite;
 }
 
 .bluedot {
@@ -65,7 +93,8 @@ html, body {
 }
 
 .acqua {
-    color: #64FFDA !important;
+    /*color: #64FFDA !important;*/
+    color: #0b5ed7;
 }
 
 .lightblue {
@@ -73,27 +102,25 @@ html, body {
 }
 
 .codetext {
-    color: #64FFDA;
+    color: #0b5ed7;
 }
 
 .title {
-    color: ghostwhite;
+
 
 }
 
 .navbar-brand {
     font-weight: 500;
     font-size: 150%;
-    color: ghostwhite !important;
 }
 
 .description {
-    max-width: 1000px;
+    max-width: 1600px;
     margin-top: 50px;
     font-weight: 400;
     font-size: 12pt;
     transition-duration: 1s;
-    color: white;
 }
 
 .particle {
@@ -134,12 +161,12 @@ html, body {
 }
 
 .social-icon {
-    color: white;
+    color: black;
     transition-duration: 0.5s;
 }
 
 .social-icon:hover {
-    color: #64FFDA;
+    color: #0a53be;
 }
 
 #section-welcome {
@@ -203,7 +230,29 @@ html, body {
 }
 
 .nav-link {
-    color: #ccd6f6 !important;
+    color: whitesmoke !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+
+}
+
+.hi {
+    font-size: 48pt;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    min-width: 60% !important;
+}
+
+.hi2 {
+    padding-top: 200px;
+    padding-bottom: 100px !important;
+    max-width: 40% !important;
+}
+
+.ps-10 {
+    padding-left: 100px;
 }
 
 .animoji {
@@ -254,7 +303,7 @@ html, body {
 }
 
 .title-divider {
-    background-color: #64FFDA;
+    background-color: black;
     max-width: 100%;
 }
 
@@ -276,8 +325,8 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
 
 .navbar-toggler span {
     display: block;
-    background-color: #64FFDA;
-    height: 3px;
+    background-color: black;
+    height: 2px;
     width: 35px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -389,9 +438,9 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
 }
 
 .container-fluid {
-
-    max-width: 800px;
-
+    margin-top: -50px;
+    padding: 0;
+    max-width: 98%;
 }
 
 /** FadeIn **/
@@ -439,6 +488,21 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
 /* ANIMATIONS */
 
 @media only screen and (max-width: 600px) {
+
+    .hi {
+        font-size: 32pt;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        min-width: 50% !important;
+        padding-left: 50px;
+    }
+
+    .hi2 {
+        padding-top: 50px;
+        padding-bottom: 50px !important;
+        max-width: 100% !important;
+    }
+
     .welcome {
         font-size: 36pt;
     }
@@ -466,13 +530,18 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
     }
 
     .nav-link {
-        font-weight: 500 !important;
+        font-weight: 400 !important;
         text-align: start;
+        margin-left: 40px;
+        margin-top: 10px;
+        font-size: 16pt !important;
+        color: #0456cc !important;
     }
 
     .navbar {
         padding-left: 15px !important;
         padding-right: 15px !important;
+        background-color: white;
     }
 
     .navbar-collapse ul {
@@ -486,6 +555,11 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
 
     .description {
         font-size: 12pt;
+    }
+
+    .ps-10 {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .animoji {

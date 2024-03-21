@@ -22,10 +22,10 @@ html, body {
     z-index: 1;
     border-radius: 50%;
     padding: 10px;
-    width: 277px;
-    height: 277px;
+    width: 278px;
+    height: 278px;
     position: relative;
-    border: 0.115rem solid #fff;
+    border: 0.115rem solid #83ff00;
 }
 
 #avatar-shapes {
@@ -106,7 +106,27 @@ html, body {
 }
 
 .bg-smoke {
-    background-color: #eaeaea;
+    background-color: #F9F9F9;
+}
+
+.bg-blue {
+    background-color: #0b5ed7;
+}
+
+.pt-10 {
+    padding-top: 100px !important;
+}
+
+.pb-10 {
+    padding-bottom: 100px !important;
+}
+
+.pdt-20 {
+    padding-top: 200px !important;
+}
+
+.pdb-20 {
+    padding-bottom: 200px !important;
 }
 
 .title {
@@ -124,6 +144,7 @@ html, body {
     font-weight: 400;
     font-size: 12pt;
     transition-duration: 1s;
+    color: #4b4b4b;
 }
 
 .particle {
@@ -192,10 +213,10 @@ html, body {
 
 
 .work-card  {
-    background-color: #061b3f !important;
+    background-color: whitesmoke !important;
     box-shadow: 0 10px 30px -15px #020c1bb3;
     z-index: 99999;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 20px;
     width: 100%;
     border: none;
@@ -234,6 +255,7 @@ html, body {
 
 .nav-link {
     color: whitesmoke !important;
+    margin-left: 30px !important;
     font-weight: bold;
 }
 
@@ -249,7 +271,7 @@ html, body {
 }
 
 .hi2 {
-    padding-top: 200px;
+    padding-top: 250px;
     padding-bottom: 100px !important;
     max-width: 40% !important;
 }
@@ -283,14 +305,15 @@ html, body {
 }
 
 .btn-rounded-lg {
-    padding: 12px 15px 12px 15px;
+    padding: 12px 20px 12px 20px;
     outline: none;
     border: 1px solid;
-    border-color: #64FFDA;
+    border-color: #0a53be;
     background-color: transparent;
     border-radius: 5px;
     transition-duration: 0.5s;
-    color: #64FFDA;
+    color: #0a53be;
+    font-weight: bold;
 }
 
 .btn-rounded:hover {
@@ -299,11 +322,16 @@ html, body {
 }
 
 .btn-rounded-lg:hover {
-    background-color: rgba(100,255,218,0.1);
+    background-color: #0a53be;
+    color: whitesmoke;
 }
 
 .project-icon-big {
     font-size: 2em !important;
+}
+
+.project-icon {
+    color: #0a53be !important;
 }
 
 .title-divider {
@@ -495,16 +523,23 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
 
     .hi {
         font-size: 32pt;
-        padding-top: 100px;
+        padding-top: 150px;
         padding-bottom: 100px;
         min-width: 50% !important;
-        padding-left: 50px;
     }
 
     .hi2 {
         padding-top: 50px;
         padding-bottom: 50px !important;
         max-width: 100% !important;
+    }
+
+    .pdt-20 {
+        padding-top: 20px !important;
+    }
+
+    .pdb-20 {
+        padding-bottom: 70px !important;
     }
 
     .welcome {
@@ -562,7 +597,7 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
     }
 
     .ps-10 {
-        padding-left: 30px;
+        padding-left: 30px !important;
         padding-right: 30px;
     }
 

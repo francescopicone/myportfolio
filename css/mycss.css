@@ -105,6 +105,10 @@ html, body {
     color: #0b5ed7;
 }
 
+.bg-smoke {
+    background-color: #eaeaea;
+}
+
 .title {
 
 
@@ -116,7 +120,6 @@ html, body {
 }
 
 .description {
-    max-width: 1600px;
     margin-top: 50px;
     font-weight: 400;
     font-size: 12pt;
@@ -253,6 +256,7 @@ html, body {
 
 .ps-10 {
     padding-left: 100px;
+    padding-right: 100px;
 }
 
 .animoji {

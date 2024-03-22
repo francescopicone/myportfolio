@@ -25,7 +25,7 @@ html, body {
     width: 278px;
     height: 278px;
     position: relative;
-    border: 0.115rem solid #83ff00;
+    border: 0.115rem solid #ccf381;
 }
 
 #avatar-shapes {
@@ -227,7 +227,18 @@ html, body {
     margin-top: 50px;
     transition-duration: 1s;
     outline: none;
+}
 
+.article-card {
+    z-index: 99999;
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    margin-top: 50px;
+    transition-duration: 1s;
+    outline: none;
+    border-bottom: 1px solid lightgray;
 }
 
 .work-card:hover {

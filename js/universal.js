@@ -130,17 +130,6 @@ $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-$('#navbar-toggler').click(function(){
-    var actual_color = $('#navbar').css("background-color");
-    if (actual_color == "white"){
-        $('#navbar').css("-webkit-backdrop-filter", "blur(10px)");
-        $('#navbar').css("backdrop-filter", "blur(10px)");
-    }
-    else {
-        $('#navbar').css("background-color", "white");
-    }
-});
-
 
 
 

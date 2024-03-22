@@ -147,6 +147,10 @@ html, body {
     color: #4b4b4b;
 }
 
+.text-smoke {
+    color: #4b4b4b;
+}
+
 .particle {
     position: absolute;
     border-radius: 50%;

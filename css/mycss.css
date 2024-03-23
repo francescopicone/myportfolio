@@ -4,7 +4,7 @@
 
 html, body {
     background-color: #f5f4fc;
-    /*font-family: Poppins;*/
+    font-family: Poppins !important;
     height: 100%;
     transition-duration: 1s !important;
     justify-content: center !important;
@@ -72,6 +72,14 @@ html, body {
 .welcome {
     font-size: 72pt;
     transition-duration: 1s;
+}
+
+.modal-content {
+    border-radius: 0px !important;
+    background-color: white;
+    border: none;
+    box-shadow: 0 10px 30px -15px #020c1bb3;
+    outline: none;
 }
 
 .bluedot {
@@ -246,17 +254,17 @@ html, body {
 }
 
 .card-description {
-    height: 30px;
+    height: 60px;
+}
+
+#footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .card-technologies {
     height: 30px;
     margin-bottom: 15px;
-}
-
-.modal-content .btn-close {
-    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
-
 }
 
 .carousel-image-project {
@@ -491,6 +499,7 @@ progress::-webkit-progress-value { background: #64FFDA !important; }
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
 }
+
 
 .big-button {
 

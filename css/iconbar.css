@@ -11,6 +11,19 @@
     font-size: 18px;
 }
 
+.language-bar {
+    margin-left: -13px !important;
+    margin-top: 5px;
+}
+
+.language-bar a {
+    text-align: center;
+    padding: 4px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: calc(1.4rem + 1.5vw) !important;
+}
+
 
 .icons-bar {
     position: fixed;
